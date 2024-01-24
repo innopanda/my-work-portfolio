@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    overflow-x: auto; /* 启用水平滚动条 */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 默认情况下，每排4列 */
+    gap: 35px;
+    justify-content: center;
+    margin: 45px;
+}
+
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3列网格布局 */
+    gap: 30px; /* 增加卡片之间的间距 */
+    padding: 20px;
+    margin: 0 auto; /* 居中对齐 */
+    max-width: 1000px; /* 最大宽度 */
+} 
+
+.grid-item {
+    background-color: rgb(31, 28, 28);
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    width: 100%; /* 卡片宽度 */
+    height: auto; /* 卡片高度自动 */
+    transition: transform 0.3s ease;
+    color: rgb(198, 198, 198); /* 设置文字颜色为白色 */
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}  
+
+.grid-item:hover img {
+    transform: scale(3); /* 鼠标悬停时放大图片 */
+}
+
+/* 媒体查询 - 适用于小屏幕 */
+@media screen and (max-width: 768px) {
+    
+        .grid-container {
+            grid-template-columns: repeat(2, 1fr); /* 屏幕宽度小于768px时，每排2列 */
+        }
+    .grid-item {
+        width: 100%; /* 小屏幕下卡片宽度 */
+        height: auto; /* 小屏幕下卡片高度自动 */
+    }
+}
+#aboutButton {
+    position: absolute;
+    top: 20px;
+    right: 33px;
+    opacity: 0.9; /* 设置透明度为50% */
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#bio {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    display: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+

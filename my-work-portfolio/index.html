@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>作品集</title>
+    <style>
+        /* 添加一些基本的CSS样式，可以根据需要进行进一步样式设计 */
+        /* ... */
+        #bio {
+            display: none; /* 初始时隐藏个人简介 */
+        }
+    </style>
+</head>
+
+<body>
+    <button id="aboutButton" onclick="toggleBio()">请点击</button>
+    <div id="bio">
+        <p>'大家好,我是Panda,一个拥有超过10年零售行业品牌营销和用户经营经验的专家,尤其擅长陈列管理和视觉传达。我的职业旅程中,我有幸与一些顶级品牌合作,如LVMH GAP、Levi's、雅萌等,这些经历不仅锻炼了我在品牌服务设计、产品包装设计和AI互动陈列场景应用方面的技能,还让我精通商业插画和多种设计工具。
+            
+            我曾在LVMH的首个高端白酒品牌项目中扮演品牌推广和终端陈列关键角色,成功推出了3个SKU,并大大提升了品牌价值。在这个项目中,我不仅负责产品管理部的建立和运作,还管理了22400个SKU,完成了产品的梳理和新产品的创造。
+            
+            曾作阿里巴巴新零售运营服务的第一个合作伙伴与阿里共同打造了零售终端POP-UP,IP跨界合作模式。利用阿里平台的资源,为线下商业综合体提供O2O用户流量运营,和线上线下营销策划的解决方案。通过这种创新的合作模式，我们激活了周围百万人次用户的参与，为品牌带来了巨大的曝光度和客流量。
+            
+            我的工作不仅是数字化营销和品牌策略的实施,更是通过创意和技术将品牌故事生动地呈现给目标客户。我相信，好的设计不仅仅是看起来美观，它更能与消费者产生共鸣，创造难忘的购物体验。
+            
+            在自由时间里，我热衷于探索新的创意灵感，无论是在日常生活中，还是在最新的设计趋势中,我利用AI技术开发了网站,用户互动应用,以及场景化图片学习工具,熟练了我对MJ SD ChatGPT VScode 等工具的了解，我总能找到激发创造力的火花。简单来说，我就是那个用设计和创意让品牌故事活起来的人！
+            
+            希望这段自我介绍能准确地反映出您的专业背景和个人特色。如果您需要进行任何调整或添加更多个人触感,请随时告诉我。我的邮箱是innopanda2023@gmial.com
+            '</p>
+    </div>
+    <div class="grid-container">
+           <!-- 添加了id属性到每个grid-item -->
+           <div class="grid-item" id="image1">
+            <!-- 移除了img标签中的src属性 -->
+            <img src="" alt="1空间陈列设计">
+            <h2>空间陈列设计</h2>
+            <p></p>
+        </div>
+
+          <!-- 同样的修改应用到所有其他grid-item -->
+          <div class="grid-item" id="image2">
+            <img src="" alt="2空间陈列设计">
+            <h2>空间陈列设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image3">
+            <img src="job3.png" alt="3空间陈列设计">
+            <h2>空间陈列设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image4">
+            <img src="job4.png" alt="4空间陈列设计">
+            <h2>空间陈列设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image5">
+            <img src="job5.png" alt="1品牌服务设计">
+            <h2>1品牌服务设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image6">
+            <img src="job6.png" alt="2品牌服务设计">
+            <h2>2品牌服务设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image7">
+            <img src="job7.png" alt="3品牌服务设计">
+            <h2>3品牌服务设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image8">
+            <img src="job8.png" alt="4品牌服务设计">
+            <h2>4品牌服务设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image9">
+            <img src="job9.png" alt="1商品图案设计">
+            <h2>1商品图案设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image10">
+            <img src="job10.png" alt="2商品图案设计">
+            <h2>2商品图案设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image11">
+            <img src="job11.png" alt="3商品图案设计">
+            <h2>3商品图案设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image12">
+            <img src="job12.png" alt="4商品图案设计">
+            <h2>4商品图案设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image13">
+            <img src="job13.png" alt="1插画概念设计">
+            <h2>1插画概念设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image14">
+            <img src="job14.png" alt="2插画概念设计">
+            <h2>2插画概念设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image15">
+            <img src="job15.png" alt="3插画概念设计">
+            <h2>3插画概念设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image16">
+            <img src="job16.png" alt="4插画概念设计">
+            <h2>4插画概念设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image17">
+            <img src="job17.png" alt="1场景设计作品">
+            <h2>IP场景设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image18">
+            <img src="job18.png" alt="2场景设计作品">
+            <h2>IP场景设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image19">
+            <img src="job19.png" alt="3场景设计作品">
+            <h2>IP场景设计</h2>
+            <p></p>
+        </div>
+
+        <div class="grid-item" id="image20">
+            <img src="job20.png" alt="4场景设计作品">
+            <h2>IP场景设计</h2>
+            <p></p>
+        </div>
+    </div>
+</body>
+
+</html>
