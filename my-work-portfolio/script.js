@@ -11,7 +11,7 @@ function toggleBio() {
 function updatePortfolio(folderName) {
     for (let i = 1; i <= 20; i++) {
         let imgElement = document.getElementById('image' + i).getElementsByTagName('img')[0];
-        imgElement.src = folderName + '/Job' + i + '.png';
+        imgElement.src = folderName + '/job' + i + '.png';
         
 
         let container = document.getElementById('image' + i);
