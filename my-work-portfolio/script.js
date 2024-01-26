@@ -22,5 +22,5 @@ function updatePortfolio(folderName) {
 
 // 页面加载时调用这个函数来初始化显示的作品集
 window.onload = function() {
-    updatePortfolio('空间陈列设计'); // 只需更改这里的类别名称即可
+    updatePortfolio('商品图案设计'); // 只需更改这里的类别名称即可
 };
